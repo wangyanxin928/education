@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>登陆页面</title>
+    <meta name="renderer" content="webkit">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <link rel="stylesheet" href="../layui/css/layui.css">
+    <link rel="stylesheet" href="../css/costomMain.css">
+
+    <script src="../layui/layui.js"></script>
+    <style>
+
+        .layui-input-block {
+            margin-left: 10px;
+        }
+
+        .layui-input {
+            padding-left: 30px;
+        }
+
+        .layui-form-item .layui-input-inline {
+            width: 260px;
+            float: none;
+        }
+
+        @media screen and (max-width: 450px) {
+            .layui-form-item .layui-input-inline {
+                margin: 0 0 10px 10px !important;
+                width: 100%;
+            }
+
+            .layui-form-item .layui-input-inline + .layui-form-mid {
+                margin-left: 10px !important;
+            }
+
+            .layui-elem-field {
+                border: 0 !important;
+            }
+
+            .data-none {
+                display: none;
+            }
+        }
+    </style>
+</head>
+<body>
+<div class="ww50 data-left data-none">
+
+
+</div>
+<fieldset class="layui-elem-field data-ww50 data-left data-landing hh100">
+    <div class="hh5"></div>
+    <div class="hh100">
+        <div class="data-f2 data-tac">
+            <div>
+                <img src="../images/land_1_03.png" alt="">
+            </div>
+            <div>
+                Welcome to 途pay
+            </div>
+
+
+        </div>
+        <div class="layui-field-box data-tac">
+            <form class="layui-form" action="">
+                <div class="layui-form-item">
+                    <div class="layui-inline">
+                        <div class="layui-input-inline">
+                            <i class="data-icon-mine"></i>
+                            <input type="tel" name="phone | email" placeholder="手机／邮箱" lay-verify="phone |email"
+                                   autocomplete="off"
+                                   class="layui-input">
+                        </div>
+                    </div>
+                </div>
+                <div class="layui-form-item">
+                    <div class="layui-input-inline">
+                        <i class="data-icon-lock"></i>
+                        <input type="password" name="password" placeholder="请输入密码" autocomplete="off"
+                               class="layui-input">
+                        <i class="data-icon-see"></i>
+                    </div>
+                </div>
+                <div class="layui-form-item" pane="">
+                    <div class="layui-input-block data-tal ml100">
+                        <input type="checkbox" name="like1[write]" lay-skin="primary" title="记住密码">
+
+                        <a href="http://www.layui.com" class="data-register">
+                            注册用户
+                        </a>
+                    </div>
+                </div>
+                <div class="layui-form-item">
+                    <div class="layui-input-block ">
+                        <button class="layui-btn layui-btn-radius layui-btn-danger layui-input-inline"
+                                lay-submit lay-filter="formDemo">登&nbsp;&nbsp;&nbsp;&nbsp;陆
+                        </button>
+                    </div>
+                </div>
+            </form>
+            <hr>
+            <div class="data-thirdParty">
+                <a href="http://www.layui.com" class="data-xinlang">
+                    <span></span>
+                    <p>微博登陆</p>
+                </a>
+                <a href="http://www.layui.com" class="data-qq">
+                   <span></span>
+                    <p>微信登陆</p>
+                </a>
+                <a href="http://www.layui.com" class="data-weixin">
+                    <span></span>
+                    <p>微信登陆</p>
+                </a>
+            </div>
+
+
+
+        </div>
+        <footer>
+            <div class=" data-footer">
+                菲尔德公司版权所有&copy;1997-2017
+            </div>
+        </footer>
+    </div>
+</fieldset>
+<script>
+    //Demo
+    layui.use('form', function () {
+        var form = layui.form();
+        //监听提交
+        form.on('submit(formDemo)', function (data) {
+            layer.msg(JSON.stringify(data.field));
+            return false;
+        });
+    });
+</script>
+</body>
+</html>

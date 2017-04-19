@@ -1,0 +1,121 @@
+body{font-size: 12px;  color: #666666;height: 90%;}
+html{height: 80%;}
+.data-tal{text-align: left;}
+.data-tac{text-align: center;}
+.data-tar{text-align: right;}
+.data-none{display: block}
+.data-left{float: left}
+.data-right{float: right}
+.data-position-r{position: relative;}
+.data-position-a{position: absolute;}
+
+.w50{width: 50px;}
+
+.ww50{width: 49.5%}
+.ww100{width: 100%;}
+
+.hh5{height: 5%;}
+.hh10{height: 10%;}
+.hh20{height: 20%;}
+.hh80{height: 80%;}
+.hh90{height: 90%;}
+.hh100{height: 100%;}
+
+.data-ww50{width: 49%;}
+.mt150{margin-top: 150px;}
+.ml100{margin-left: 100px!important;}
+.data-landing{margin-left: 15px;width: 500px;height: 100%; float: left;background-color: #343643;}
+
+/*字体*/
+ .data-f2{font-size: 2rem;}
+ .data-register{
+     color: #01AAED;
+     float: right;
+     margin-top: 8px;
+     font-size: 14px;
+     margin-right: 110px;
+ }
+/*登陆页面图标*/
+.data-icon-mine{
+  background: url("../images/mine.png") no-repeat 100% 100%;
+    width: 20px;
+    height: 20px;
+    display: inline-block;
+    position: absolute;
+    top: 7px;
+    left: 7px;
+}
+.data-icon-lock{
+    background: url("../images/lock.png") no-repeat 100% 100%;
+    width: 20px;
+    height: 20px;
+    display: inline-block;
+    position: absolute;
+    top: 7px;
+    left: 7px;
+}
+.data-icon-see{
+    background: url("../images/see.png") no-repeat 100% 100%;
+    width: 20px;
+    height: 20px;
+    display: inline-block;
+    position: absolute;
+    top: 7px;
+    right: 7px;
+}
+.data-thirdParty>a{
+    display: inline-block;
+    float: left;
+    width: 33%;
+    height: 50px;
+}
+.data-thirdParty>a>span{
+    width: 55px;
+    height: 50px;
+    display: inline-block;
+}
+
+.data-thirdParty>a p{
+    color: #999;
+}
+.data-thirdParty .data-xinlang span{
+    background: url("../images/xinlang.png") no-repeat 100% 100%;
+}
+.data-thirdParty .data-xinlang:hover span{
+    background: url("../images/xinlang2.png") no-repeat 100% 100%;
+}
+.data-thirdParty .data-qq span{
+    background: url("../images/qq.png") no-repeat 100% 100%;
+}
+.data-thirdParty .data-qq:hover span{
+    background: url("../images/qq2.png") no-repeat 100% 100%;
+}
+.data-thirdParty .data-weixin span{
+    background: url("../images/weixin.png") no-repeat 100% 100%;
+}
+.data-thirdParty .data-weixin:hover span{
+    background: url("../images/weixin2.png") no-repeat 100% 100%;
+}
+
+
+.data-footer{
+    clear: both;
+    margin-left: 30%;
+    bottom: 0px;
+    margin-top:70px;
+    margin-bottom: 10px;
+    color: #999;
+}
+
+
+@media screen and (max-width: 450px){
+    body{font-size: 12px;  color: #666666;height: 100%;background-color: #343643;}
+    html{height: 100%;}
+    .data-none{display: none}
+    .data-footer{margin-left: 25%;}
+    .data-ww50{width: 100%;}
+    .data-landing{margin-left: 0!important;}
+    .ml100 {margin-left: 10px!important;}
+    .data-register{margin-right: 0px;}
+}
+
