@@ -1,6 +1,7 @@
-body{font-size: 12px;  color: #666666;height: 100%;}
+body{font-size: 12px;  color: #666666;height: 100%; background:url("../images/home_bg.jpeg") no-repeat 100% 100%; background-size: 100% 100%;}
 html{height: 100%;}
-.data-main{width: 1140px;margin: auto;}
+/*.data-main{width: 1140px;margin: auto;}*/
+.data-main{width: 100%;margin:auto;}
 .data-tal{text-align: left;}
 .data-tac{text-align: center;}
 .data-tar{text-align: right;}
@@ -26,7 +27,12 @@ html{height: 100%;}
 .mt150{margin-top: 150px;}
 .ml10{margin-left: 10px!important;}
 .ml100{margin-left: 100px!important;}
-.data-landing{    margin-top: 40px;  width: 300px;height: 100%; float: right;background-color: #343643;}
+
+.mmr3{margin-right: 3%;}
+.data-landing{ width: 300px;height: 100%; float: right;margin-right: 70px;  margin-top: 5%;background-color: rgba(251, 251, 251, 0.12);}
+
+/*nav*/
+
 
 /*字体*/
  .data-f2{font-size: 2rem;}
@@ -112,7 +118,10 @@ html{height: 100%;}
 
 
 @media screen and (max-width: 450px){
-    body{font-size: 12px;  color: #666666;height: 100%;background-color: #343643;}
+
+    body{font-size: 12px;  color: #666666;height: 100%; background-image: url("")}
+    /*body{font-size: 12px;  color: #666666;height: 100%; background:url("../images/home_bg.jpeg") no-repeat 100% 100%; background-size: 100% 100%;}*/
+    .data-landing{margin-right: 0px;}
     html{height: 100%;}
     .data-main{width: 100%;margin: auto;}
     .data-none{display: none}
@@ -124,3 +133,8 @@ html{height: 100%;}
     .data-register{margin-right: 0px;}
 }
 
+/*.data-landing2{width: 800px;*/
+    /*background: url("../images/xuexi.jpg") no-repeat 100% 100%;*/
+    /*height: 600px;*/
+    /*border: 1px solid;*/
+    /*margin-top: 40px;}*/
